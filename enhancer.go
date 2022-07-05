@@ -4,7 +4,6 @@ import (
 	"net"
 
 	"github.com/Dreamacro/clash/common/cache"
-	"github.com/Dreamacro/clash/component/fakeip"
 	C "github.com/Dreamacro/clash/constant"
 )
 
