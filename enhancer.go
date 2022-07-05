@@ -28,7 +28,6 @@ func (h *ResolverEnhancer) IsExistFakeIP(ip net.IP) bool {
 	}
 
 	if pool := h.fakePool; pool != nil {
-		return pool.Exist(ip)
 	}
 
 	return false
@@ -63,7 +62,6 @@ func (h *ResolverEnhancer) FindHostByIP(ip net.IP) (string, bool) {
 }
 
 func (h *ResolverEnhancer) PatchFrom(o *ResolverEnhancer) {
-	if h.mapping != nil && o.mapping != nil {
 		o.mapping.CloneTo(h.mapping)
 	}
 
